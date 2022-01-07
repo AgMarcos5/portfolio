@@ -118,6 +118,7 @@ header:hover .hand{
 }
 
 .menu a{
+    cursor: pointer;
     text-decoration: none;
     color:inherit;
     padding-bottom: 2px;
@@ -286,19 +287,26 @@ header:hover .hand{
     height: auto !important;
 }
 
-/*  FOOTER  */
-footer{
+/*  BOTÓN IR ARRIBA  */
+.b-up{
     height: 40px;
     background: transparent;
     text-align: center;
 }
 
-footer img{
+.b-up img{
     opacity: .5;
     transition: 1s;
 }
 
-footer img:hover{
+.b-up img:hover{
     opacity: 1;
     transform: translateY(-5px);
+}
+
+/*  FOOTER  */
+footer{
+    height: 40px;
+    background: transparent;
+    text-align: center;
 }

@@ -16,12 +16,23 @@ boton.addEventListener("click", function() {
 
 
 //EFECTOS SCROLL
+let inicioButton = document.querySelector(".to-top");
+let rootElement = document.documentElement;
 
-var lastScrollTop = 0;
+inicioButton.addEventListener("click", () =>{
+    rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+})
+
+
+
+let lastScrollTop = 0;
 
 window.addEventListener("scroll", function(){  
    navfix();   // navbar position fixed
-   var st = window.pageYOffset || document.documentElement.scrollTop; 
+   let st = window.pageYOffset || document.documentElement.scrollTop; 
    if (st > lastScrollTop){
        // SCROLL ABAJO
         parallaxOblivion("arriba");
@@ -46,7 +57,7 @@ function navfix() {
 function parallaxOblivion(direction){
     if(document.querySelector("#oblivion-container").classList.contains("mostrar")){
         let headerFront = document.querySelector(".oblivion-header-front");
-        var topVal = parseInt(headerFront.style.top, 10);
+        let topVal = parseInt(headerFront.style.top, 10);
 
         if(direction === "arriba"){
             if(topVal > -115)   // limite superior

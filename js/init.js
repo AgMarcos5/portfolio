@@ -31,14 +31,17 @@
 
         document.addEventListener("EntraPuerta", e =>{
             let {puerta} = e.detail;         
-            //document.querySelector(`#${puerta}-container`).style.display = "block";
-            document.querySelector(`#${puerta}-container`).classList.add("mostrar");
+            if(puerta !== "inicio"){
+                document.querySelector(`#${puerta}-container`).classList.add("mostrar");
+            }
           
         });
 
         document.addEventListener("SalePuerta", e =>{
             let {puerta} = e.detail;
-            document.querySelector(`#${puerta}-container`).classList.remove("mostrar");
+            if(puerta !== "inicio"){
+                document.querySelector(`#${puerta}-container`).classList.remove("mostrar");
+            }
 
             /*
             setTimeout(()=>{
