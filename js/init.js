@@ -32,7 +32,9 @@
         document.addEventListener("EntraPuerta", e =>{
             let {puerta} = e.detail;         
             if(puerta !== "inicio"){
-                document.querySelector(`#${puerta}-container`).classList.add("mostrar");
+                let container = document.querySelector(`#${puerta}-container`);
+                container.classList.add("mostrar");
+                document.querySelector("#game").scrollIntoView();
             }
           
         });
