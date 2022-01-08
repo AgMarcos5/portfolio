@@ -20,7 +20,7 @@
 }
 
 #contacto-container h1:hover{
-  font-weight: bold;
+  transform: translateY(3px);
 }
 
 #contacto-container .separator {
