@@ -87,13 +87,40 @@ header:hover .hand{
     top: 10px;
 }
 
+
+@media (max-width: 1050px){
+    header{
+      padding: 10px;
+    }
+  }
+
+
+@media (max-width: 750px){
+    #game{
+        font-size: max(0.8em, 8px);
+    }
+    .keys {
+        width: 60px;
+    }
+}
+
+
+
+
 /* separador */
 .separator{
-    width: 500px;
+    max-width: 500px;
     height: 4px;
     background: url('../img/separador.png') repeat-x;
     margin: 0 auto;
 } 
+
+
+
+
+
+
+
 
 /*  NAVBAR  */
 .menu{
@@ -237,6 +264,7 @@ header:hover .hand{
     height: 500px;
     margin: 0 auto;
     background-color: #151515;
+    overflow: hidden;
 }
 
 .game-container canvas {
