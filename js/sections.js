@@ -64,12 +64,12 @@ function parallaxGaleria(direction){
         console.log(posVal)
         if(direction === "arriba"){
             console.log(direction)
-            if(posVal > -860)
+            if(posVal > -820)
             headerFront.style.objectPosition = `0 ${posVal - 50}px`;
         }
         else if(direction === "abajo"){
             console.log(direction)
-            if(posVal < -540)
+            if(posVal < -640)
                 headerFront.style.objectPosition = `0 ${posVal + 50}px`;
         }
     }
