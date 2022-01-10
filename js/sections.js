@@ -60,17 +60,18 @@ function parallaxGaleria(direction){
     if(document.querySelector("#galeria-container").classList.contains("mostrar")){
         let headerFront = document.querySelector(".video-wrapper video");
         let headerPos = window.getComputedStyle(headerFront, null).getPropertyValue("object-position");
-        let posVal = parseInt(headerPos.split(" ")[1]);
-        console.log(posVal)
+        let posValY = parseInt(headerPos.split(" ")[1]);
+        let posValX = parseInt(headerPos.split(" ")[0]);
+        console.log(posValX+" "+posValY);
         if(direction === "arriba"){
             console.log(direction)
-            if(posVal > -820)
-            headerFront.style.objectPosition = `0 ${posVal - 50}px`;
+            if(posValY > -820)
+            headerFront.style.objectPosition = `${posValX}px ${posValY - 50}px`;
         }
         else if(direction === "abajo"){
             console.log(direction)
-            if(posVal < -640)
-                headerFront.style.objectPosition = `0 ${posVal + 50}px`;
+            if(posValY < -640)
+                headerFront.style.objectPosition = `${posValX}px ${posValY + 50}px`;
         }
     }
 }

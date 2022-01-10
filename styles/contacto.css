@@ -146,8 +146,12 @@ codersrank-activity {
   }
 }
 
-@media (max-width:500px){
+@media (max-width:520px){
   .avatar-container{
     min-width: auto;
+  }
+  .avatar-container img{
+      max-width: 95%;
+      height: auto;
   }
 }
