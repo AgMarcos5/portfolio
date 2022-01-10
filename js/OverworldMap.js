@@ -63,6 +63,7 @@ window.OverworldMaps = {
             [utils.asGridCoord(43,7)]: "contacto",
             [utils.asGridCoord(44,16)]: "galeria",
             [utils.asGridCoord(15,17)]: "inicio",
+            [utils.asGridCoord(12,15)]: "proyectos",
         },
         walls: {
             [utils.asGridCoord(35,6)]: true,

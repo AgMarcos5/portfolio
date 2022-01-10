@@ -73,6 +73,8 @@ class Overworld {
                 break;
                 case 'galeria'  : hero.changePosition(44,16);
                 break;
+                case 'proyectos'  : hero.changePosition(12,15);
+                break;
                 default : hero.changePosition(15,17);
             }
         }

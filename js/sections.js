@@ -32,7 +32,6 @@ window.addEventListener("scroll", function(){
 
 
 function navfix() {
-    console.log(document.body.clientWidth)
         if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
             document.querySelector("#game-navbar ul").classList.add("navfix");
           }
