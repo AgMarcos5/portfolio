@@ -159,6 +159,10 @@ header:hover .hand{
     color: #43ed83;
 }
 
+.menu a img{
+    display: none;
+}
+
 
 .menu .dot {
     position: relative;
@@ -226,6 +230,25 @@ header:hover .hand{
     -webkit-backdrop-filter: blur(24px);
     backdrop-filter: blur(24px);
 }
+
+@media (max-width:700px){
+    .navfix li img{
+        display: inline-block;
+    }
+    .navfix li span{
+        display: none;
+    }
+    .navfix{
+        padding: 10px 0;
+    }
+}
+
+@media (max-width:395px){
+    .navfix li{
+        padding: 16px !important;
+    }
+}
+
 
 .navfix li {
     display: inline;

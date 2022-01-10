@@ -32,12 +32,13 @@ window.addEventListener("scroll", function(){
 
 
 function navfix() {
-    if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-      document.querySelector("#game-navbar ul").classList.add("navfix");
-    }
-    else{
-        document.querySelector("#game-navbar ul").classList.remove("navfix");
-    }
+    console.log(document.body.clientWidth)
+        if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+            document.querySelector("#game-navbar ul").classList.add("navfix");
+          }
+          else{
+              document.querySelector("#game-navbar ul").classList.remove("navfix");
+          }
 }
 
 function parallaxOblivion(direction){
@@ -62,14 +63,11 @@ function parallaxGaleria(direction){
         let headerPos = window.getComputedStyle(headerFront, null).getPropertyValue("object-position");
         let posValY = parseInt(headerPos.split(" ")[1]);
         let posValX = parseInt(headerPos.split(" ")[0]);
-        console.log(posValX+" "+posValY);
         if(direction === "arriba"){
-            console.log(direction)
             if(posValY > -820)
             headerFront.style.objectPosition = `${posValX}px ${posValY - 50}px`;
         }
         else if(direction === "abajo"){
-            console.log(direction)
             if(posValY < -640)
                 headerFront.style.objectPosition = `${posValX}px ${posValY + 50}px`;
         }
