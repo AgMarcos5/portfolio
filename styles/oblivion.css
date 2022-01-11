@@ -24,6 +24,20 @@
     top: -70px;
     background-position: center;
     transition: 1s;
+    z-index: 1;
+}
+
+.oblivion-header-title{
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-image: url(../img/sec-oblivion/oblivion-header-title.png);
+  background-repeat: no-repeat;
+  top: -87px;
+  left: -160px;
+  background-position: center;
+  transition: 1s;
+  z-index: 0;
 }
 
 .oblivion-header .robot-container{
@@ -44,10 +58,35 @@
 
 @media(max-width:1170px){
   #robot{
-    right: 1% !important;
+    right: -40px !important;
   }
 }
 
+@media(max-width:1100px){
+  #robot{
+    right: 0px !important;
+  }
+}
+
+@media(max-width:990px){
+  #robot{
+    display: none;
+  }
+}
+
+@media(max-width:829px){
+  #robot{
+    display: none;
+  }
+  .oblivion-header-title {
+    top: 30px;
+    left: 0;
+    background-position: center;
+    background-size: contain;
+    max-width: 469px;
+    max-height: 151px;
+  }
+}
 
 /*  CONTENT */
 
